@@ -1,0 +1,105 @@
+/* Default light mode styles */
+body {
+    background-color: #ffffff;
+    color: #000000;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.app-container {
+    min-height: 100vh;
+}
+
+.app-header {
+    padding: 20px;
+    text-align: center;
+}
+
+.nav {
+    margin: 20px 0;
+}
+
+.nav-link {
+    margin: 0 15px;
+    color: #007bff;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+}
+
+.btn-toggle {
+    margin: 20px;
+}
+
+/* Dark mode styles */
+body.dark-mode {
+    background-color: #333333;
+    color: #ffffff;
+}
+
+.app-container.dark-mode {
+    background-color: #333333;
+    color: #ffffff;
+}
+
+/* Additional styles for the Todo component */
+.todo-container {
+    padding: 20px;
+}
+
+.todo-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.todo-item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.todo-item.completed {
+    text-decoration: line-through;
+    color: #888888;
+}
+
+.completed-symbol {
+    margin-right: 10px;
+    color: green;
+}
+
+.btn {
+    margin-left: auto;
+    margin-right: 5px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-edit {
+    background-color: #007bff;
+    color: #ffffff;
+}
+
+.btn-delete {
+    background-color: #dc3545;
+    color: #ffffff;
+}
+
+/* Styles for Completed Tasks section */
+.completed-tasks {
+    margin-top: 30px;
+}
+
+.completed-tasks table {
+    width: 100%;
+}
+
+.completed-tasks .btn-delete {
+    background-color: #dc3545;
+    color: #ffffff;
+}
